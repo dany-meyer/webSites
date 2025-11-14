@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>PetStore GET Beispiel</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    button { margin-top: 1rem; padding: .5rem 1rem; }
+    pre { background: #f3f3f3; padding: 1rem; border-radius: 6px; }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <h1>Vue.js + GET Request (Swagger PetStore)</h1>
+
+  <label>Pet-ID auswählen:</label>
+  <input v-model="petId" type="number" min="1" style="width:80px">
+
+  <br>
+  <button @click="loadPet">Daten laden</button>
+
+  <h2>Antwort:</h2>
+  <pre>{{ result }}</pre>
+</div>
+
+<script>
+const app = Vue.createApp({
+  data() {
+    return {
+      petId: 1,
+      result: "Noch keine Anfrage gesendet."
+    };
+  },
+  methods: {
+    async loadPet() {
+      const url = `https://petstore3.swagger.io/api/v3/pet/${this.petId}`;
+      this.result = "Lade...";
+      try {
+        const res = await fetch(url);
+        if (!res.ok) {
+          this.result = `Fehler: ${res.status} ${res.statusText}`;
+          return;
+        }
+        const data = await res.json();
+        this.result = JSON.stringify(data, null, 2);
+      } catch (err) {
+        this.result = "Netzwerkfehler: " + err;
+      }
+    }
+  }
+});
+app.mount('#app');
+</script>
+
+</body>
+</html>
