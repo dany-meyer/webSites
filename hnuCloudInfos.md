@@ -1,6 +1,6 @@
 # hnuCloud Infos 194.95.24.122
 - den MQTT Broker können Sie direkt benutzen (Port 1883)
-
+- Um einen Grafana-User zu erhalten, wenden Sie sich bitte an Prof. D.Meyer
 - um eine DB-Instanz zu erhalten wenden Sie sich bitte an Prof. D.Meyer per eMail; zur Nutzung ist eine Verbindung per VPN erforderlich
 
 - um ein docker-Image zu deployen:
