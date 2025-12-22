@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urlaubsinfos – Ferienhaus Dany in Mursewiek (Ummanz)</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --paper: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #dbeafe 100%);
+      background-attachment: fixed;
+      position: relative;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        radial-gradient(circle at 20% 50%, rgba(147, 197, 253, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(186, 230, 253, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(224, 242, 254, 0.3) 0%, transparent 30%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .layout {
+      position: relative;
+      z-index: 1;
+    }
+    a { color: var(--accent); }
+    .layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 18px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+    }
+    .sidebar {
+      position: sticky;
+      top: 14px;
+      align-self: start;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    }
+    .brand {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 6px;
+    }
+    .addr {
+      color: var(--muted);
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+    .toc {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .toc a {
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      color: var(--ink);
+      background: #fbfdff;
+    }
+    .toc a:hover { border-color: rgba(37,99,235,.35); color: var(--accent); }
+    .map {
+      width: 100%;
+      height: 240px;
+      border: 0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    main {
+      display: grid;
+      gap: 14px;
+    }
+    .paper {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--line);
+    }
+    .lead {
+      margin: 0;
+      color: var(--muted);
+    }
+    .kv {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    .kv th, .kv td {
+      border-top: 1px solid var(--line);
+      padding: 10px 8px;
+      vertical-align: top;
+    }
+    .kv th {
+      width: 220px;
+      text-align: left;
+      color: #0b1220;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .bullets {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+    .bullets li { margin: 7px 0; }
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+    .openmaps {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="card">
+        <div class="brand">Urlaubsinfos – Ferienhaus Dany in Mursewiek (Ummanz)</div>
+        <p class="addr">Ferienhaus Mursewiek 29a<br>18569 Ummanz OT Mursewiek</p>
+
+        <iframe class="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=54.453620,+13.180733&output=embed"></iframe>
+
+        <a class="openmaps" href="https://www.google.com/maps/search/?api=1&query=54.453620,13.180733" target="_blank" rel="noopener">
+          In Google Maps öffnen
+        </a>
+
+        <nav class="toc" aria-label="Inhaltsverzeichnis">
+          <a href='#adresse-anfahrt'>Adresse &amp; Anfahrt</a>
+<a href='#hausinfos'>Hausinfos</a>
+<a href='#geheimtipp'>Geheimtipp</a>
+<a href='#highlights'>Highlights</a>
+<a href='#tipps'>Tipps</a>
+<a href='#restaurants'>Restaurants</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <section id="adresse-anfahrt" class="paper">
+        <h1>Ferienhaus Mursewiek 29a</h1>
+        <p class="lead">18569 Ummanz OT Mursewiek</p>
+        <p>Das letzte reetgedeckte Haus links vor der Brücke (Blick von Mursewiek zur Brücke) mit der Gabionen-Mauer aus Stein</p>
+      </section>
+
+      <section id="hausinfos" class="paper">
+        <h2>Hausinfos (wie im Dokument)</h2>
+        <table class='kv'><tbody>
+          <tr><th>Anleitungen</th><td>in der blauen Kommode (Wohnzimmer)</td></tr><tr>
+            <th>Fahrradverleih</th><td>in Waase, in Mursewiek (Geflügelhof Klieve) oder Gingst</td></tr><tr>
+            <th>Einkaufen</th><td>EDEKA in Gingst; Bioladen in Gingst; Bergen ..</td></tr><tr>
+            <th>Tanken</th><td>Stralsund/Samtens/Bergen</td></tr><tr>
+            <th>Infos zur Umgebung</th><td>Waase neben der Kirche</td></tr><tr>
+            <th>Schlüssel</th><td>Übergabe des Hauses erfolgt durch Herrn Messmann am Anreisetag oder über den Schlüsselsafe am Briefkasten. Der Schlüssel für das Gartenhaus ist am Schlüsselbund. Bitte keinesfalls abmachen oder verlegen.</td></tr><tr>
+            <th>Ersatzschlüssel</th><td>Herr Messmann (Hausmeisterdienst): 038305 60094 oder  0176 480 15 357</td></tr><tr>
+            <th>Monika Hirche (Dany’s Mama)</th><td>03838 31254</td></tr><tr><th>Dany</th><td>01522 167 50 70</td></tr><tr>
+            <th>Heizung</th><td>Fußbodenheizung via ökologischer Wärmepumpe; Holzofen: Holz bei Herrn Messmann bestellen;</td></tr><tr>
+            <th>Grillen</th><td>Aufgrund der Brandschutzbestimmungen für Häuser mit Reetdach ist ein Grillen mit Holzkohle nicht erlaubt. Ein Elektrogrill ist im Ferienhaus (Gartenhaus) vorhanden. Dort findet Ihr auch einen Grilleimer wenn Ihr am Strand oder unter der Brücke am Focker Strom grillen wollt</td></tr><tr>
+            <th>WLAN</th><td>Glasfasernetz High-Speed</td></tr><tr><th>Fernseher/DVD</th><td>Es ist ein Fernseher + DVD-Player vorhanden. Der Empfang ist nur per DVBT (Zimmerantenne ggf. nach außen stellen), Mediatheken sind über das Internet möglich. Es kann daher wetterabhängig dazu kommen, dass nur dänisches Fernsehen möglich ist – ansonsten alle öffentlich/rechtlichen Sender. Einige DVD’s sind im Ferienhaus vorhanden.</td></tr><tr>
+            <th>Wäschepaket</th><td>Das Wäschepaket kann über Herrn Messmann für 10€ pro Tag pro Person dazu gebucht werden: pro Person und pro Woche sind dies: 3 Handtücher + Bettwäsche. Da ich selbst nicht vor Ort bin, kann ich die Wäsche nicht übernehmen und habe diesen Dienst an den Hausmeister ausgelagert. Die Bettwäsche ist in einfacher Ausfertigung, daher ggf. die eigene Wäsche mitbringen. Ansonsten bitte einfach Bescheid sagen, ob das Wäschepaket gebucht werden soll. Neue Bettbezüge, Kissen und Matratzen sind natürlich vorhanden.</td></tr><tr>
+            <th>Kinderbettchen + Hochstuhl</th><td>Im Schlafzimmer findet Ihr ein Reisebettchen und Hochstuhl. Das Reisebettchen ist zusammengeklappt und in einer Hülle – das Aufbauen sollte ganz fix gehen. Beim Hochstuhl einfach die 4 Beinchen einklicken. Für das Baby-Bett ist keine Zudecke und Kissen vorhanden. Bitte selbst mitbringen. Ebenso wie spezielles Kindergeschirr.</td></tr><tr>
+            <th>Zusätzliches Gästebett</th><td>befindet sich als Klappbett im kleinen Abstellraum. Zusätzliches Kissen und Decke findet Ihr im grünen Schlafzimmer in der Wickelkommode.</td></tr><tr><th>Zusätzliche Ansteckplatten für den Tisch</th><td>findet Ihr im kleinen Abstellraum</td></tr><tr>
+            <th>Für den Strand</th><td>Windschutz + Gummihammer, Sandspielzeug im kleinen Abstellraum oder im Gartenhaus</td>
+          </tr></tbody></table>
+        
+        <div class="note">Alle Inhalte wurden 1:1 aus dem Word-Dokument übernommen; Links werden klickbar dargestellt.</div>
+      </section>
+
+      
+    <section id="geheimtipp" class="paper">
+      <h2>Geheimtipp</h2>
+      <p>für uns schönster Strand Rügens = Nordstrand bei Kap Arkona (40km: über Wittower Fähre – dann nach Altenkirchen-Putgarten. In Putgarten im Ortseingang links in Richtung großen Parkplatz fahren; dann Straße geradeaus und an der Gabelung links in Richtung Funkturm (runde Kuppel). Ca. 1km vor dem Funkturm geht eine Abfahrt rechts auf einen Parkplatz mit Treppe zum Strand).<a href="https://maps.app.goo.gl/NFZaBJMwLWg9vPZ59" target="_blank" rel="noopener"> Nordstrand </a></p>
+    </section>
+    
+    <section id="highlights" class="paper">
+      <h2>Highlights</h2>
+      <ul class='bullets'>
+        <li>Kreideküste in Sassnitz</li>
+        <li>Kraniche auf Ummanz</li>
+        <li>Strände an der Schaabe (Glowe) + Ostseebäder + Mönchgut</li>
+        <li>Ostseebäder: Binz + Sellin</li>
+        <li>Stralsund</li>
+        <li>Putbus + Lauterbach</li></ul>
+    </section>
+    
+    <section id="tipps" class="paper">
+      <h2>Tipps</h2>
+      <ul class='bullets'>
+        <li>Mit dem Rad über die Brücke nach Ummanz, dann der Straße folgen und nach Freesenort abbiegen (ca. 5km von Mursewiek) – schön zum Abend, Blick über den Bodden nach Stralsund, ganz einsam und ruhig – auf dem Deich Spaziergang in Richtung Campingplatz (Hiddenseeblick)</li>
+        <li>Am Campingplatz Surfen oder Kanus ausleihen; bei ruhigem Wetter nach Hiddensee paddeln (ca. 1h einfache Fahrt)</li>
+        <li>Via Wittower Fähre an die Schaabe zum Baden, schön Pizza essen in Glowe in der Ostseeperle und nach Sassnitz zur Kreideküste (Naturerbezentrum) und Stadt-Hafen (vielleicht mit Kutterfahrt vor der Küste)</li>
+        <li>Hiddensee (Fähre von Schaprode via Gingst-Trent)</li>
+        <li>Putbus: alte Fürstenresidenz mit einem ganz schnuckeligen Theater (Spielplan ansehen!) + schönen Park + Lauterbach (Hafen + Badehaus Goor + netter Wanderweg am Bodden in Richtung Vreechen); Ausflug von Lauterbach auf die Insel Vilm (nur nach Anmeldung in Lauterbach). Vilm ist naturbelassen und die Führung sehr interessant</li>
+        <li>Hansestadt Stralsund mit Altstadt und Ozeaneum</li>
+        <li>Prora: Baumwipfelpfad + Besuch in Binz mit Seebrücke; Besuch Jagdschloss Granitz (ist wahrscheinlich. überlaufen)</li>
+        <li>Sellin mit Seebrücke, nettes Restaurant auf der Seebrücke; vlt. einen Strandkorb mieten? Achtung: Am Strand Schatten ab Nachmittag; dafür kann man schön an der Steilküste wandern; evtl. weiter auf die Halbinsel Mönchgut fahren</li>
+        <li>Radeln, Radeln, Radeln,.. z.B. auf Ummanz</li>
+        <li>Segeln: Ausleihe z.B. in Lauterbach (Jaich)</li>
+        <li>Surf-Schnupperkurse im Ostseecamp auf Ummanz</li>
+        <li>viele Sommerkonzerte in den Kirchen der Insel</li>
+        <li>wenn viel Zeit ist: Störtebeckerfestspiele in Ralswiek (wunderschöne Naturbühne und ein tolles (Gross-)Event)</li>
+        <li>Sonnenuntergang am Brückenpfeiler - die zweite kleine Treppe auf der Brücke nach Waase hinabstiegen und die Abendsonne geniessen</li>
+      
+      </ul>
+    </section>
+    
+    
+    
+      <section id='restaurants' class='paper'><h2>Restaurants</h2><ul class='bullets'>
+        <li>Ummanz: Cafe Zuckerkuss - wunderschön am Bodden (<a href='https://ruegeninsel-ummanz.de/netzwerkpartner/cafe-zuckerkuss/' target='_blank' rel='noopener'>Cafe Zuckerkuss</a> )</li>
+        <li>Ummanz: Tikki Bar - cooles Surfer Ambiente (<a href='https://www.ummaii.de/home/' target='_blank' rel='noopener'>Tikki Bar und Veranstaltungen</a> )</li>
+        <li>Lieschow: Bauer Lange - rustikales Hof-Feeling, besonders mit Kindern schön: (<a href='https://bauerlange.de' target='_blank' rel='noopener'>Bauernhof Lange</a> )</li>
+        <li>Gingst: Bioladen direkt neben der Kirche und Museum mit Kaffee im Garten</li>
+        <li>Gingst: Bioladen direkt neben der Kirche und Museum mit Kaffee im Garten(<a href='https://westruegen.net/west-ruegen/gingst/' target='_blank' rel='noopener'>Infos zu Gingst und Westrügen</a> )</li>
+        <li>Kluis: Restaurant Alte Schule - sehr gutes Essen, echter Tipp(<a href='https://pension-restaurant-alte-schule-kluis.hotels-in-pomerania.com/de/' target='_blank' rel='noopener'>Alte Schule - Kluis</a> )</li>
+        <li>Trent (auf dem Weg zur Wittower Fähre oder zur Fähre nach Schaprode): Fähreck (<a href='https://speisekarte.menu/restaurants/trent/faehr-eck' target='_blank' rel='noopener'>Fähreck in Trend</a> )  / schön einfach und gute Hausmannskost mit echtem DDR-Schokoeis</li>
+        <li>! Saßnitz: Gastmahl des Meeres (<a href='http://www.gastmahl-des-meeres-ruegen.de/' target='_blank' rel='noopener'>Gastmahl des Meeres</a> ) / eines der besten Fischrestaurants (reservieren!)</li>
+        <li>Bergen: Kaufmannshof (<a href='https://www.kaufmannshof.de/restaurant/' target='_blank' rel='noopener'>Kaufmannshof</a> ) / gehobenere Küche</li>
+        <li>Lauterbach: <a href='http://ruegen-nautilus.de/restaurant/' target='_blank' rel='noopener'>Nautilus</a> / cooles Ambiente = U-Boot-Feeling</li>
+        <li>! Ostseeperle Glowe (direkt am Meer) <a href='https://www.ostseeperle-hotel.de/' target='_blank' rel='noopener'>Ostseeperle</a> / unser Lieblingslokal mit schönem Blick auf das Meer – am Abend besonders schön</li>
+      </ul></section>
+
+    </main>
+  </div>
+</body>
+</html>
